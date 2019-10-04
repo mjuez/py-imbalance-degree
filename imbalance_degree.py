@@ -250,4 +250,5 @@ def imbalance_degree(classes, distance="EU"):
     m = _min_classes(empirical_distribution, e)
     i_m = _i_m(K, m)
     dfn = _dist_fn()
-    return (dfn(empirical_distribution, e) / dfn(i_m, e)) + (m - 1)
+    dist_ed = dfn(empirical_distribution, e)
+    return 0.0 if dist_ed == 00 else (dist_ed / dfn(i_m, e)) + (m - 1)
