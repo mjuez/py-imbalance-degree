@@ -227,17 +227,17 @@ def imbalance_degree(classes, distance="EU"):
         -------
         A distance function.
         """
-        if distance is "EU":
+        if distance == "EU":
             return _eu
-        elif distance is "CH":
+        elif distance == "CH":
             return _ch
-        elif distance is "KL":
+        elif distance == "KL":
             return _kl
-        elif distance is "HE":
+        elif distance == "HE":
             return _he
-        elif distance is "TV":
+        elif distance == "TV":
             return _tv
-        elif distance is "CS":
+        elif distance == "CS":
             return _cs
         else:
             raise ValueError("Bad distance function parameter. " + \
